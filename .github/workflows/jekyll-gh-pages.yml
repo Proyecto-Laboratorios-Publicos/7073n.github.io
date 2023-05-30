@@ -14,6 +14,7 @@ permissions:
   contents: read
   pages: write
   id-token: write
+  
 
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
@@ -49,3 +50,9 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+
+theme: jekyll-theme-minimal
+
+title: Octocat's homepage
+
+description: Bookmark this to keep an eye on my project updates!
